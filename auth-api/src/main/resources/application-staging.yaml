@@ -1,0 +1,84 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /auth-api
+spring:
+  application:
+    name: auth-api
+
+
+#==================Keycloak properties================
+keycloak:
+  realm: ${CLIENT_RELM_NAME}
+  auth-server-url: ${KEYCLOAK_URL_WITH_PATH}
+  ssl-required: external
+  #keycloak resource is the client ID
+  resource: ${KEYCLOAK_CLIENT_NAME}
+  #The line below will prevent redirect to login page
+  bearer-only: true
+
+#Admin credentials, reading system env variables
+admin:
+  username: ${KEYCLOAK_ADMIN_USER}
+  password: ${KEYCLOAK_ADMIN_PASSWORD}
+
+services:
+  user-service:
+    url: ${USER_SERVICE_URL}
+
+  twilio-service:
+    url: ${TWILIO_SERVICE_URL}
+
+#==================Swagger2 properties================
+#Login route
+operation1:
+  description: By providing user credentials receive JWT token
+  value: Returns token
+  responseContainer: Token
+
+#Refresh token route
+operation2:
+  description: By providing refresh token in authorization header receive token
+  value: Requires refresh token
+  responseContainer: JWT token
+
+#Logout route
+operation3:
+  description: Used to logout user. JWT refresh token needs to be provided in header
+  value: Requires refresh token
+
+#Update password route
+operation4:
+  description: Used to change/update existing user password
+  value: Requires userId, new password, confirm password and token in authorization header
+
+#ResetPasswordDto properties
+ResetPasswordDto:
+  description: Reset password details
+  password: User new password
+  confirm: User confirm password
+
+#TokenDto properties
+TokenDto:
+  description: Token details
+  accessToken: Display of access token
+  tokenType: Display of token type ex; Bearer
+  refreshToken: Display of refresh token
+  expires_in: Display of token expiration
+  scope: Display of scope ex; openid email profile
+  userInfo: Display of user info object
+
+#UserInfoDto properties
+UserInfoDto:
+  description: User info details
+  sub: User unique Id
+  email_verified: User verified email
+  preferred_username: User username
+  email: User email
+  name: full user name
+
+#UserCredentials properties
+UserCredentials:
+  description: User info details
+  password: User password
+  username: User username

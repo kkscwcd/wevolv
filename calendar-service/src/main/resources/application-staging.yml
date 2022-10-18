@@ -1,0 +1,20 @@
+server:
+  error:
+    include-message: always
+  port: 8080
+  servlet:
+    contextPath: /calendar-service
+spring:
+  application:
+    name: calendar-service
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: ${MONGODB_URI}
+
+mongodb:
+  database: ${MONGODB_NAME}
+
+services:
+  profile-service:
+    url: ${PROFILE_SERVICE_URL}

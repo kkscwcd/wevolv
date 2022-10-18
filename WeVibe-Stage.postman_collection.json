@@ -1,0 +1,2288 @@
+{
+	"info": {
+		"_postman_id": "bbb04e28-a49c-4b79-9440-995fbeb2cac6",
+		"name": "WeVibe-Stage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17046335"
+	},
+	"item": [
+		{
+			"name": "location",
+			"item": [
+				{
+					"name": "LocationReviews",
+					"item": [
+						{
+							"name": "ReviewImage",
+							"item": [
+								{
+									"name": "AddImageLocationReview",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MDQzMzksImlhdCI6MTY1ODQ3NTUzOSwianRpIjoiN2UxM2FjODYtYTIwYi00ODYxLWFjMDYtMzllYmViMTYzZDM0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.F9Vx45DRZXWL9vohCccfjP4vsYzCqe3vkucSO_17MrgYFPJRbRAKokEpI1xY8d_Z_dNlQYMrtsfQ4A-BpBehBny1O3u7gEFSsF_nGlzkXpIRPFPRMYFm1E2WMbAxdhta3aa4lwxrELy88nb3gWKiSc45tjLPwpKCLgBhxQI8OoMl-zm2D_6NclBs4QWpfdOgIL2XEaGIiTecMvz5SX5uh9Q-Wm4KitfNpHPkMF3OaTRBK44OcPwFVN9E-dK3Ct7j_R70cCSx87iCNc5g49S9kCjVn1ZnTS7cZt_Adv5h_rerLa5v3DnNtmG3GvDD8KnEsUol-E_ucbJQubdILirsZg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "multipartFile",
+													"type": "file",
+													"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+												},
+												{
+													"key": "multipartFile",
+													"type": "file",
+													"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+												}
+											]
+										},
+										"url": {
+											"raw": "https://api.wevolv.net/api/staging/wevibe/gallery/add/image/location/review/:reviewId",
+											"protocol": "https",
+											"host": [
+												"api",
+												"wevolv",
+												"net"
+											],
+											"path": [
+												"api",
+												"staging",
+												"wevibe",
+												"gallery",
+												"add",
+												"image",
+												"location",
+												"review",
+												":reviewId"
+											],
+											"variable": [
+												{
+													"key": "reviewId",
+													"value": "236da1dd-f9e7-426f-863e-82361b21416a"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAllImagesReview",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzkyMjQsImlhdCI6MTY1ODUxMDQyNCwianRpIjoiMDkyNDYzMmYtMGY1ZS00MTk4LWFkNjAtMDdjYzQ4NGE1M2ZlIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI0MjhmYWQ1Ny01ZGM3LTQ2ODEtOWQ0Ny1lYmEwYmU2OTZhNTgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiI0MjhmYWQ1Ny01ZGM3LTQ2ODEtOWQ0Ny1lYmEwYmU2OTZhNTgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.fnoAWvD33n_sGwJ8UO1IMcTZwpWsTpvaiFL9mVTos4t5Ozw79IW0-Z4W_1Gfx4jn3rFuiLd9RrprXgfYBZfFzilEVR5vxQZHIr3qb2aNggb2n1BZKESCoH4N3KHhn-Ifb-51DTSwm0P-ktc7CJlFJbaYhczS8oaMF_120xRyc9Xo4lD4RgS4wroQwrTK4ilBTvpQFH7NZO8RVgpzj-RpFiBxM_BuKsUnhHd1Z_Dvfb1ZwZdabKMtIHr7fj772m7rmcan9qdjUKdLVOlWAj34UOLfpfpfZc2Cdxf8Xs70GmEHks2eHlacxZP6aep50v2eY0xx4vRy8BWUgjhxoXzQmw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://api.wevolv.net/api/staging/wevibe/location/get/all/images/review/:reviewId",
+											"protocol": "https",
+											"host": [
+												"api",
+												"wevolv",
+												"net"
+											],
+											"path": [
+												"api",
+												"staging",
+												"wevibe",
+												"location",
+												"get",
+												"all",
+												"images",
+												"review",
+												":reviewId"
+											],
+											"variable": [
+												{
+													"key": "reviewId",
+													"value": "06b0fa36-65f5-4cac-b764-a40eacbfffaa"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetImageFromReview",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NjY2MDYsImlhdCI6MTY1ODQzNzgwNiwianRpIjoiOWM1NzZjM2MtMTM4Yi00MzRhLWJiYjYtNDg4Y2VkNmU4YThiIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkNmNmOWZiOS02MjFhLTRhMWEtOTY5MC0yYjA5YzNiNTNkYzIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJiODU3YTEwNy01MTI5LTQ4NzgtYjFkZi0wN2QzYmI0ZDI0ZTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJiODU3YTEwNy01MTI5LTQ4NzgtYjFkZi0wN2QzYmI0ZDI0ZTciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3RCRSB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJiZTJAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoidGVzdEJFIiwiZmFtaWx5X25hbWUiOiJ1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcmJlMkBtYWlsaW5hdG9yLmNvbSJ9.pKkGS-cJajcfJbyRtsG2LwdkJIUQ6DSPkfMFZMZN93GNWbIGYbiiQeFgYRD_L6Sj32FuaLI2OYbUFBqX1Ni8akSUxMgdVwjZvQwtz5ilJR7e1EeTTkxW0_q_-LNUbG8R_jy8lqGBpcJ2TS22b7hraW2zkUoXWx_XXS7u1_K0KcBr102xpwC3EOSsXx7L5f1-u7ZlgiJe4b3gRopbGROzBOwXMUw5XsVNfe_Qe05-tV7YItQaSCV8vnIBbigLMEicIWi3l43LRmUPfZIGW4eUGEKKDvmbkyLkfN0CnPmVSXf0ZQhmRCl7RoifT9cDZ2vOqvSdz41pGBdqfXDndFDXJQ",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://api.wevolv.net/api/staging/wevibe/gallery/get/image/review/:imageId",
+											"protocol": "https",
+											"host": [
+												"api",
+												"wevolv",
+												"net"
+											],
+											"path": [
+												"api",
+												"staging",
+												"wevibe",
+												"gallery",
+												"get",
+												"image",
+												"review",
+												":imageId"
+											],
+											"variable": [
+												{
+													"key": "imageId",
+													"value": "291f3d98-b2a4-47f4-9966-f374eceec0f7"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DeleteImageFromReview",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MDQzMzksImlhdCI6MTY1ODQ3NTUzOSwianRpIjoiN2UxM2FjODYtYTIwYi00ODYxLWFjMDYtMzllYmViMTYzZDM0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.F9Vx45DRZXWL9vohCccfjP4vsYzCqe3vkucSO_17MrgYFPJRbRAKokEpI1xY8d_Z_dNlQYMrtsfQ4A-BpBehBny1O3u7gEFSsF_nGlzkXpIRPFPRMYFm1E2WMbAxdhta3aa4lwxrELy88nb3gWKiSc45tjLPwpKCLgBhxQI8OoMl-zm2D_6NclBs4QWpfdOgIL2XEaGIiTecMvz5SX5uh9Q-Wm4KitfNpHPkMF3OaTRBK44OcPwFVN9E-dK3Ct7j_R70cCSx87iCNc5g49S9kCjVn1ZnTS7cZt_Adv5h_rerLa5v3DnNtmG3GvDD8KnEsUol-E_ucbJQubdILirsZg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "[\n    \"9abc75ec-fff9-46a1-a654-1762ce97a4d0\"\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://api.wevolv.net/api/staging/wevibe/gallery/delete/image/review/:reviewId",
+											"protocol": "https",
+											"host": [
+												"api",
+												"wevolv",
+												"net"
+											],
+											"path": [
+												"api",
+												"staging",
+												"wevibe",
+												"gallery",
+												"delete",
+												"image",
+												"review",
+												":reviewId"
+											],
+											"variable": [
+												{
+													"key": "reviewId",
+													"value": "06b0fa36-65f5-4cac-b764-a40eacbfffaa"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAllLikesImage",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzQ3OTksImlhdCI6MTY1ODUwNTk5OSwianRpIjoiZjM2ZWNlYTAtY2M1Ni00NmM2LTgxZWEtMDdlOTZkNjI4YTg5IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.lP-DXz8mdkQ8euxyjyun1BkrEuH1RX0lBJxVSUgdQVyjHgskT4R5Q1nFVvZaJLzFUsKshP2NeSMqUVQ1rJg6wlh3H-zIuuEH2cmfhoYAWFbWH6BciPkwSgt-_hknewm2iTRm4VceBgZQo5s5gzievuuXhn9fhAR0_5W472gOEorkhjs3eetbachnDsBeUK7YdI2CoOwpq-N8nAU2BB0GyykzFkTd-zmDBPvR1AElRwxtqrWJuJHDAexjnQJpiRzlRRKk6ONHfE-Cw9pYA3uKXGNpmx8B2tHRRaXZdubeSxJmGedwfUK806ymZ5T3B0GG3XoztrC_FF6Wr-n97YvEtw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "multipartFile",
+													"type": "file",
+													"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+												},
+												{
+													"key": "multipartFile",
+													"type": "file",
+													"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+												}
+											]
+										},
+										"url": {
+											"raw": "https://api.wevolv.net/api/staging/wevibe/location/all/likes/image/:imageId",
+											"protocol": "https",
+											"host": [
+												"api",
+												"wevolv",
+												"net"
+											],
+											"path": [
+												"api",
+												"staging",
+												"wevibe",
+												"location",
+												"all",
+												"likes",
+												"image",
+												":imageId"
+											],
+											"variable": [
+												{
+													"key": "imageId",
+													"value": "236da1dd-f9e7-426f-863e-82361b21416a"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "LikeUnlikeImage",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzkyMjQsImlhdCI6MTY1ODUxMDQyNCwianRpIjoiMDkyNDYzMmYtMGY1ZS00MTk4LWFkNjAtMDdjYzQ4NGE1M2ZlIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI0MjhmYWQ1Ny01ZGM3LTQ2ODEtOWQ0Ny1lYmEwYmU2OTZhNTgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiI0MjhmYWQ1Ny01ZGM3LTQ2ODEtOWQ0Ny1lYmEwYmU2OTZhNTgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.fnoAWvD33n_sGwJ8UO1IMcTZwpWsTpvaiFL9mVTos4t5Ozw79IW0-Z4W_1Gfx4jn3rFuiLd9RrprXgfYBZfFzilEVR5vxQZHIr3qb2aNggb2n1BZKESCoH4N3KHhn-Ifb-51DTSwm0P-ktc7CJlFJbaYhczS8oaMF_120xRyc9Xo4lD4RgS4wroQwrTK4ilBTvpQFH7NZO8RVgpzj-RpFiBxM_BuKsUnhHd1Z_Dvfb1ZwZdabKMtIHr7fj772m7rmcan9qdjUKdLVOlWAj34UOLfpfpfZc2Cdxf8Xs70GmEHks2eHlacxZP6aep50v2eY0xx4vRy8BWUgjhxoXzQmw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "https://api.wevolv.net/api/staging/wevibe/location/likeUnlike/image/:imageId",
+											"protocol": "https",
+											"host": [
+												"api",
+												"wevolv",
+												"net"
+											],
+											"path": [
+												"api",
+												"staging",
+												"wevibe",
+												"location",
+												"likeUnlike",
+												"image",
+												":imageId"
+											],
+											"variable": [
+												{
+													"key": "imageId",
+													"value": "236da1dd-f9e7-426f-863e-82361b21416a"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "AddLocationReview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzUwMTksImlhdCI6MTY1ODUwNjIxOSwianRpIjoiODg0N2Q2ZmYtZjRkMS00NjMzLWJkOTgtODZjNjY4N2FmNjg3IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJiMDAwMzZmMi02YmY1LTRjMGEtOTUxNC00ZmI3MmZjYTY4NTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI4YjEyNzk3OS02NTE4LTQ2OTktOTA3OS1hYmNhYzU5NGU5NTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iLCJ1c2VyIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOGIxMjc5NzktNjUxOC00Njk5LTkwNzktYWJjYWM1OTRlOTU3IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJ0ZXN0QkUgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUyQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3RCRSIsImZhbWlseV9uYW1lIjoidXNlciIsImVtYWlsIjoidGVzdHVzZXJmZTJAbWFpbGluYXRvci5jb20ifQ.cQqufJp6d0wDiLKyxLB8ZWbB_sVCULLD12apQz1M2F9BMfXIbkVwoHGSZyUaVQYjqYOJqBgxYTN-AtS-cOL9aImtDsW8ClL-UGc1KV56Ri5VTFg4CoTKb2-K8SYTxJ0bPlPKbcOqb4907C8H3eT93AAWAJOQt0XFD7O8oHBIwcYjipqJgZM2bVMXeqdwZ92_jvrcZ7h5hqm_Azp98F3mFp1knzvKVz0ehPX_KQdlvjOeRNVPnix6eSFN2VI7rjUc34WZ97OkkK5pTS3pM-BRW_n1u_rKVt79cpie6QMwJUuzbv9GXwexmAHHGKpLaBio6OpTrp6_mGO6S7fbcbgRbw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"locationRating\": \"1\",\n    \"review\": \"Ovo je review za lokaciju\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/add/review/:locationId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"add",
+										"review",
+										":locationId"
+									],
+									"variable": [
+										{
+											"key": "locationId",
+											"value": "2dbf06bb-6560-4706-80c2-24eb4e0a3732"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EditLocationReview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzUwMTksImlhdCI6MTY1ODUwNjIxOSwianRpIjoiODg0N2Q2ZmYtZjRkMS00NjMzLWJkOTgtODZjNjY4N2FmNjg3IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJiMDAwMzZmMi02YmY1LTRjMGEtOTUxNC00ZmI3MmZjYTY4NTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI4YjEyNzk3OS02NTE4LTQ2OTktOTA3OS1hYmNhYzU5NGU5NTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iLCJ1c2VyIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOGIxMjc5NzktNjUxOC00Njk5LTkwNzktYWJjYWM1OTRlOTU3IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJ0ZXN0QkUgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUyQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3RCRSIsImZhbWlseV9uYW1lIjoidXNlciIsImVtYWlsIjoidGVzdHVzZXJmZTJAbWFpbGluYXRvci5jb20ifQ.cQqufJp6d0wDiLKyxLB8ZWbB_sVCULLD12apQz1M2F9BMfXIbkVwoHGSZyUaVQYjqYOJqBgxYTN-AtS-cOL9aImtDsW8ClL-UGc1KV56Ri5VTFg4CoTKb2-K8SYTxJ0bPlPKbcOqb4907C8H3eT93AAWAJOQt0XFD7O8oHBIwcYjipqJgZM2bVMXeqdwZ92_jvrcZ7h5hqm_Azp98F3mFp1knzvKVz0ehPX_KQdlvjOeRNVPnix6eSFN2VI7rjUc34WZ97OkkK5pTS3pM-BRW_n1u_rKVt79cpie6QMwJUuzbv9GXwexmAHHGKpLaBio6OpTrp6_mGO6S7fbcbgRbw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"locationRating\": \"2\",\n    \"review\": \"Ovo je edit review za lokaciju\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/edit/review/:reviewId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"edit",
+										"review",
+										":reviewId"
+									],
+									"variable": [
+										{
+											"key": "reviewId",
+											"value": "b599415f-6f28-43f9-8fa9-c4c0b0a6d162"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAllLocationReviews",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzUwMTksImlhdCI6MTY1ODUwNjIxOSwianRpIjoiODg0N2Q2ZmYtZjRkMS00NjMzLWJkOTgtODZjNjY4N2FmNjg3IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJiMDAwMzZmMi02YmY1LTRjMGEtOTUxNC00ZmI3MmZjYTY4NTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI4YjEyNzk3OS02NTE4LTQ2OTktOTA3OS1hYmNhYzU5NGU5NTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iLCJ1c2VyIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOGIxMjc5NzktNjUxOC00Njk5LTkwNzktYWJjYWM1OTRlOTU3IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJ0ZXN0QkUgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUyQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3RCRSIsImZhbWlseV9uYW1lIjoidXNlciIsImVtYWlsIjoidGVzdHVzZXJmZTJAbWFpbGluYXRvci5jb20ifQ.cQqufJp6d0wDiLKyxLB8ZWbB_sVCULLD12apQz1M2F9BMfXIbkVwoHGSZyUaVQYjqYOJqBgxYTN-AtS-cOL9aImtDsW8ClL-UGc1KV56Ri5VTFg4CoTKb2-K8SYTxJ0bPlPKbcOqb4907C8H3eT93AAWAJOQt0XFD7O8oHBIwcYjipqJgZM2bVMXeqdwZ92_jvrcZ7h5hqm_Azp98F3mFp1knzvKVz0ehPX_KQdlvjOeRNVPnix6eSFN2VI7rjUc34WZ97OkkK5pTS3pM-BRW_n1u_rKVt79cpie6QMwJUuzbv9GXwexmAHHGKpLaBio6OpTrp6_mGO6S7fbcbgRbw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/get/all/reviews/:locationId?page=0&size=1&locationType=NEWEST",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"get",
+										"all",
+										"reviews",
+										":locationId"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "1"
+										},
+										{
+											"key": "locationType",
+											"value": "NEWEST"
+										},
+										{
+											"key": "locationId",
+											"value": null,
+											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "locationId",
+											"value": "2dbf06bb-6560-4706-80c2-24eb4e0a3732"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LikeUnlikeLocationReview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NjcwMDAsImlhdCI6MTY1ODQzODIwMCwianRpIjoiMGU1NDk5NjYtNGM2Ny00MzljLWIwMmYtZDBkMjdhNTZkNzJmIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2MTVmYmEwNS1kOTcwLTRhODYtOGQ3Mi1lMWRmNDY2YjE2ODciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIxNmU0NjlkNy1kMDliLTRkY2YtYTczNy04ZjIyZDkwNWYyYjYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIxNmU0NjlkNy1kMDliLTRkY2YtYTczNy04ZjIyZDkwNWYyYjYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3RCRSB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJiZTFAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoidGVzdEJFIiwiZmFtaWx5X25hbWUiOiJ1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcmJlMUBtYWlsaW5hdG9yLmNvbSJ9.pKZrzrsr5ibTuEP3iGlk3PqsT63BOsF4ORWGNB0hnw2A0nPrfeP4gaU_OzqxBg3VFWG2qrxhWLYMzGRPrih9u0dFTySqenDHEJtcnDEe0Bt6WBViJlhOVsZPQFWRFWUx17Zm07is1Zrq1uhAFS7nwtgBFT0T1qnISBJ0vSSfGjZbwGl8rQenXLrZpzv2wne07Ukb-8_XrME6vzGwaywtjcEQaIQdCq3IJ2asNPE5egcyNWh0ZWPi0EXk4wSNmtECWFeF0917G4wNdf1JoIF9s-cVdaL4-wropIoWRt7DEs5yxcmuIbOBMHOhDloJFpfLRwkQe9hPnIGfOmAbvQXUyw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/likeUnlike/review/:reviewId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"likeUnlike",
+										"review",
+										":reviewId"
+									],
+									"variable": [
+										{
+											"key": "reviewId",
+											"value": "09ae21c3-24ae-4104-a864-ccef06f00f94"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAllReviewLikes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NjY2MDYsImlhdCI6MTY1ODQzNzgwNiwianRpIjoiOWM1NzZjM2MtMTM4Yi00MzRhLWJiYjYtNDg4Y2VkNmU4YThiIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkNmNmOWZiOS02MjFhLTRhMWEtOTY5MC0yYjA5YzNiNTNkYzIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJiODU3YTEwNy01MTI5LTQ4NzgtYjFkZi0wN2QzYmI0ZDI0ZTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJiODU3YTEwNy01MTI5LTQ4NzgtYjFkZi0wN2QzYmI0ZDI0ZTciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3RCRSB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJiZTJAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoidGVzdEJFIiwiZmFtaWx5X25hbWUiOiJ1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcmJlMkBtYWlsaW5hdG9yLmNvbSJ9.pKkGS-cJajcfJbyRtsG2LwdkJIUQ6DSPkfMFZMZN93GNWbIGYbiiQeFgYRD_L6Sj32FuaLI2OYbUFBqX1Ni8akSUxMgdVwjZvQwtz5ilJR7e1EeTTkxW0_q_-LNUbG8R_jy8lqGBpcJ2TS22b7hraW2zkUoXWx_XXS7u1_K0KcBr102xpwC3EOSsXx7L5f1-u7ZlgiJe4b3gRopbGROzBOwXMUw5XsVNfe_Qe05-tV7YItQaSCV8vnIBbigLMEicIWi3l43LRmUPfZIGW4eUGEKKDvmbkyLkfN0CnPmVSXf0ZQhmRCl7RoifT9cDZ2vOqvSdz41pGBdqfXDndFDXJQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/all/likes/review/:reviewId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"all",
+										"likes",
+										"review",
+										":reviewId"
+									],
+									"variable": [
+										{
+											"key": "reviewId",
+											"value": "09ae21c3-24ae-4104-a864-ccef06f00f94"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteReview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzUwMTksImlhdCI6MTY1ODUwNjIxOSwianRpIjoiODg0N2Q2ZmYtZjRkMS00NjMzLWJkOTgtODZjNjY4N2FmNjg3IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJiMDAwMzZmMi02YmY1LTRjMGEtOTUxNC00ZmI3MmZjYTY4NTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI4YjEyNzk3OS02NTE4LTQ2OTktOTA3OS1hYmNhYzU5NGU5NTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iLCJ1c2VyIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiOGIxMjc5NzktNjUxOC00Njk5LTkwNzktYWJjYWM1OTRlOTU3IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJ0ZXN0QkUgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUyQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3RCRSIsImZhbWlseV9uYW1lIjoidXNlciIsImVtYWlsIjoidGVzdHVzZXJmZTJAbWFpbGluYXRvci5jb20ifQ.cQqufJp6d0wDiLKyxLB8ZWbB_sVCULLD12apQz1M2F9BMfXIbkVwoHGSZyUaVQYjqYOJqBgxYTN-AtS-cOL9aImtDsW8ClL-UGc1KV56Ri5VTFg4CoTKb2-K8SYTxJ0bPlPKbcOqb4907C8H3eT93AAWAJOQt0XFD7O8oHBIwcYjipqJgZM2bVMXeqdwZ92_jvrcZ7h5hqm_Azp98F3mFp1knzvKVz0ehPX_KQdlvjOeRNVPnix6eSFN2VI7rjUc34WZ97OkkK5pTS3pM-BRW_n1u_rKVt79cpie6QMwJUuzbv9GXwexmAHHGKpLaBio6OpTrp6_mGO6S7fbcbgRbw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/delete/review/:reviewId/:locationId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"delete",
+										"review",
+										":reviewId",
+										":locationId"
+									],
+									"variable": [
+										{
+											"key": "reviewId",
+											"value": "b599415f-6f28-43f9-8fa9-c4c0b0a6d162"
+										},
+										{
+											"key": "locationId",
+											"value": "2dbf06bb-6560-4706-80c2-24eb4e0a3732"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "LocationImage",
+					"item": [
+						{
+							"name": "AddImageToLocationGallery",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzQ3OTksImlhdCI6MTY1ODUwNTk5OSwianRpIjoiZjM2ZWNlYTAtY2M1Ni00NmM2LTgxZWEtMDdlOTZkNjI4YTg5IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.lP-DXz8mdkQ8euxyjyun1BkrEuH1RX0lBJxVSUgdQVyjHgskT4R5Q1nFVvZaJLzFUsKshP2NeSMqUVQ1rJg6wlh3H-zIuuEH2cmfhoYAWFbWH6BciPkwSgt-_hknewm2iTRm4VceBgZQo5s5gzievuuXhn9fhAR0_5W472gOEorkhjs3eetbachnDsBeUK7YdI2CoOwpq-N8nAU2BB0GyykzFkTd-zmDBPvR1AElRwxtqrWJuJHDAexjnQJpiRzlRRKk6ONHfE-Cw9pYA3uKXGNpmx8B2tHRRaXZdubeSxJmGedwfUK806ymZ5T3B0GG3XoztrC_FF6Wr-n97YvEtw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "multipartFile",
+											"type": "file",
+											"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+										},
+										{
+											"key": "multipartFile",
+											"type": "file",
+											"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/gallery/add/image/location/:locationId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"gallery",
+										"add",
+										"image",
+										"location",
+										":locationId"
+									],
+									"variable": [
+										{
+											"key": "locationId",
+											"value": "2dbf06bb-6560-4706-80c2-24eb4e0a3732"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAllImagesLocationId",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzQ3OTksImlhdCI6MTY1ODUwNTk5OSwianRpIjoiZjM2ZWNlYTAtY2M1Ni00NmM2LTgxZWEtMDdlOTZkNjI4YTg5IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.lP-DXz8mdkQ8euxyjyun1BkrEuH1RX0lBJxVSUgdQVyjHgskT4R5Q1nFVvZaJLzFUsKshP2NeSMqUVQ1rJg6wlh3H-zIuuEH2cmfhoYAWFbWH6BciPkwSgt-_hknewm2iTRm4VceBgZQo5s5gzievuuXhn9fhAR0_5W472gOEorkhjs3eetbachnDsBeUK7YdI2CoOwpq-N8nAU2BB0GyykzFkTd-zmDBPvR1AElRwxtqrWJuJHDAexjnQJpiRzlRRKk6ONHfE-Cw9pYA3uKXGNpmx8B2tHRRaXZdubeSxJmGedwfUK806ymZ5T3B0GG3XoztrC_FF6Wr-n97YvEtw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "multipartFile",
+											"type": "file",
+											"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+										},
+										{
+											"key": "multipartFile",
+											"type": "file",
+											"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/get/all/images/:locationId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"get",
+										"all",
+										"images",
+										":locationId"
+									],
+									"variable": [
+										{
+											"key": "locationId",
+											"value": "2dbf06bb-6560-4706-80c2-24eb4e0a3732"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetImageFromLocation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NjY2MDYsImlhdCI6MTY1ODQzNzgwNiwianRpIjoiOWM1NzZjM2MtMTM4Yi00MzRhLWJiYjYtNDg4Y2VkNmU4YThiIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkNmNmOWZiOS02MjFhLTRhMWEtOTY5MC0yYjA5YzNiNTNkYzIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJiODU3YTEwNy01MTI5LTQ4NzgtYjFkZi0wN2QzYmI0ZDI0ZTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJiODU3YTEwNy01MTI5LTQ4NzgtYjFkZi0wN2QzYmI0ZDI0ZTciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3RCRSB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJiZTJAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoidGVzdEJFIiwiZmFtaWx5X25hbWUiOiJ1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcmJlMkBtYWlsaW5hdG9yLmNvbSJ9.pKkGS-cJajcfJbyRtsG2LwdkJIUQ6DSPkfMFZMZN93GNWbIGYbiiQeFgYRD_L6Sj32FuaLI2OYbUFBqX1Ni8akSUxMgdVwjZvQwtz5ilJR7e1EeTTkxW0_q_-LNUbG8R_jy8lqGBpcJ2TS22b7hraW2zkUoXWx_XXS7u1_K0KcBr102xpwC3EOSsXx7L5f1-u7ZlgiJe4b3gRopbGROzBOwXMUw5XsVNfe_Qe05-tV7YItQaSCV8vnIBbigLMEicIWi3l43LRmUPfZIGW4eUGEKKDvmbkyLkfN0CnPmVSXf0ZQhmRCl7RoifT9cDZ2vOqvSdz41pGBdqfXDndFDXJQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/get/image/location/:imageId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"get",
+										"image",
+										"location",
+										":imageId"
+									],
+									"variable": [
+										{
+											"key": "imageId",
+											"value": "62d9c188cf3f7c31a6b7028c"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LikeUnlikeImage",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzQ3OTksImlhdCI6MTY1ODUwNTk5OSwianRpIjoiZjM2ZWNlYTAtY2M1Ni00NmM2LTgxZWEtMDdlOTZkNjI4YTg5IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.lP-DXz8mdkQ8euxyjyun1BkrEuH1RX0lBJxVSUgdQVyjHgskT4R5Q1nFVvZaJLzFUsKshP2NeSMqUVQ1rJg6wlh3H-zIuuEH2cmfhoYAWFbWH6BciPkwSgt-_hknewm2iTRm4VceBgZQo5s5gzievuuXhn9fhAR0_5W472gOEorkhjs3eetbachnDsBeUK7YdI2CoOwpq-N8nAU2BB0GyykzFkTd-zmDBPvR1AElRwxtqrWJuJHDAexjnQJpiRzlRRKk6ONHfE-Cw9pYA3uKXGNpmx8B2tHRRaXZdubeSxJmGedwfUK806ymZ5T3B0GG3XoztrC_FF6Wr-n97YvEtw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/likeUnlike/image/:imageId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"likeUnlike",
+										"image",
+										":imageId"
+									],
+									"variable": [
+										{
+											"key": "imageId",
+											"value": "62dace3f43d27b1de7566214"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAllLikesImage",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MzQ3OTksImlhdCI6MTY1ODUwNTk5OSwianRpIjoiZjM2ZWNlYTAtY2M1Ni00NmM2LTgxZWEtMDdlOTZkNjI4YTg5IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJmYmM5NzFhYS03MjE2LTQ3NDEtYWNjYy0zNWMxNTVmYTk0NWQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.lP-DXz8mdkQ8euxyjyun1BkrEuH1RX0lBJxVSUgdQVyjHgskT4R5Q1nFVvZaJLzFUsKshP2NeSMqUVQ1rJg6wlh3H-zIuuEH2cmfhoYAWFbWH6BciPkwSgt-_hknewm2iTRm4VceBgZQo5s5gzievuuXhn9fhAR0_5W472gOEorkhjs3eetbachnDsBeUK7YdI2CoOwpq-N8nAU2BB0GyykzFkTd-zmDBPvR1AElRwxtqrWJuJHDAexjnQJpiRzlRRKk6ONHfE-Cw9pYA3uKXGNpmx8B2tHRRaXZdubeSxJmGedwfUK806ymZ5T3B0GG3XoztrC_FF6Wr-n97YvEtw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "multipartFile",
+											"type": "file",
+											"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+										},
+										{
+											"key": "multipartFile",
+											"type": "file",
+											"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/location/all/likes/image/:imageId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"location",
+										"all",
+										"likes",
+										"image",
+										":imageId"
+									],
+									"variable": [
+										{
+											"key": "imageId",
+											"value": "62dace3f43d27b1de7566214"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteImageFromLocationGallery",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NjcwMDAsImlhdCI6MTY1ODQzODIwMCwianRpIjoiMGU1NDk5NjYtNGM2Ny00MzljLWIwMmYtZDBkMjdhNTZkNzJmIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2MTVmYmEwNS1kOTcwLTRhODYtOGQ3Mi1lMWRmNDY2YjE2ODciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIxNmU0NjlkNy1kMDliLTRkY2YtYTczNy04ZjIyZDkwNWYyYjYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIxNmU0NjlkNy1kMDliLTRkY2YtYTczNy04ZjIyZDkwNWYyYjYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3RCRSB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJiZTFAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoidGVzdEJFIiwiZmFtaWx5X25hbWUiOiJ1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcmJlMUBtYWlsaW5hdG9yLmNvbSJ9.pKZrzrsr5ibTuEP3iGlk3PqsT63BOsF4ORWGNB0hnw2A0nPrfeP4gaU_OzqxBg3VFWG2qrxhWLYMzGRPrih9u0dFTySqenDHEJtcnDEe0Bt6WBViJlhOVsZPQFWRFWUx17Zm07is1Zrq1uhAFS7nwtgBFT0T1qnISBJ0vSSfGjZbwGl8rQenXLrZpzv2wne07Ukb-8_XrME6vzGwaywtjcEQaIQdCq3IJ2asNPE5egcyNWh0ZWPi0EXk4wSNmtECWFeF0917G4wNdf1JoIF9s-cVdaL4-wropIoWRt7DEs5yxcmuIbOBMHOhDloJFpfLRwkQe9hPnIGfOmAbvQXUyw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    \"62d9c188cf3f7c31a6b7028d\"\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://api.wevolv.net/api/staging/wevibe/gallery/delete/image/list/locationId/:locationId",
+									"protocol": "https",
+									"host": [
+										"api",
+										"wevolv",
+										"net"
+									],
+									"path": [
+										"api",
+										"staging",
+										"wevibe",
+										"gallery",
+										"delete",
+										"image",
+										"list",
+										"locationId",
+										":locationId"
+									],
+									"variable": [
+										{
+											"key": "locationId",
+											"value": "37f7d890-3340-4012-ba28-56568e0e6be6"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SaveLocation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJDUmF2dmNXTUVCeDR5dmc2U1BMenJhR3NMU1NBbldiNEx6X2psN0NDNW9BIn0.eyJleHAiOjE2NjEwMTYxOTUsImlhdCI6MTY2MDk4NzM5NSwianRpIjoiZmE4YWE1NzAtNDRkNS00MzJhLThlMjAtNmFhMTc2ZGQxM2I0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI0NTNmNjE1Mi1jNWVkLTQ4NTYtYWU4NC01NDRkNDRhNmZmN2IiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI2ODhhZWU1NS1iMTFkLTQ1NTAtYjllMi03N2JmZjU3OGIxNGQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiI2ODhhZWU1NS1iMTFkLTQ1NTAtYjllMi03N2JmZjU3OGIxNGQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmUxIFRlc3RTdXJuYW1lIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTJAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTEiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlMkBtYWlsaW5hdG9yLmNvbSJ9.mNn5ys72P2PsCvJIDmyz3oi0hWsy1ShB6gaHSKFy8gitqdJTaEc6epJIs-kWd0GErztoZLV_tjvaT6uOpc5wCdw3ROBuYUXMeSfRi7g3ELMPFXp-bWbPTqhw6_qBDlby4mj6pNquVv4a0iDUO4lV6O5aso5oGVYwWHvy2COZCfh4sh20kaf2UjjlAFn7sbqfhbQRIvg21ul0zEI1Tly3ahibm9zNpVKKDQx5yqXRmZHbsBvzlewv1Mm_jlUNzOlNg3L4CfkhDr6QNir65ARoLGJNip1NnTkK4yS5FZ9yEUgmcySucBKIoDdj_DtaAVn0MWEOcRLLOGDtt_nUUkxvvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"city\":\"Split\",\n    \"name\":\"Park mladezi\",\n    \"country\":\"Croatia\",\n    \"address\":\"Novinska 2\",\n    \"website\":\"www.locatia.hr\",\n    \"phoneNumber\":\"123456\",\n    \"status\": {\n        \"monday\": \"1\",\n        \"tuesday\": \"E\",\n        \"wednesday\": \"20\",\n        \"thursday\": \"E\",\n        \"friday\": \"20\",\n        \"saturday\": \"E\",\n        \"sunday\": \"20\"\n    },\n    \"locationGeoLocation\" : {\n        \"type\": \"Point\",\n            \"coordinates\": {\n                \"longitude\": 43.514623,\n                \"latitude\": 16.450710\n            }\n       \n\n    },\n    \"tags\" : [\n        {\n            \"id\": \"2d3db731-2771-443e-acd7-16ea38ccffb0\",\n            \"tagName\": \"AMERICAN_SPORT\"\n        },\n        {\n            \"id\": \"2e9ff30c-1ca0-4807-a1b9-35f0e21c3a4a\",\n            \"tagName\": \"LEGAL_HELP\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/location/save",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"location",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLocationById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MDQzMzksImlhdCI6MTY1ODQ3NTUzOSwianRpIjoiN2UxM2FjODYtYTIwYi00ODYxLWFjMDYtMzllYmViMTYzZDM0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.F9Vx45DRZXWL9vohCccfjP4vsYzCqe3vkucSO_17MrgYFPJRbRAKokEpI1xY8d_Z_dNlQYMrtsfQ4A-BpBehBny1O3u7gEFSsF_nGlzkXpIRPFPRMYFm1E2WMbAxdhta3aa4lwxrELy88nb3gWKiSc45tjLPwpKCLgBhxQI8OoMl-zm2D_6NclBs4QWpfdOgIL2XEaGIiTecMvz5SX5uh9Q-Wm4KitfNpHPkMF3OaTRBK44OcPwFVN9E-dK3Ct7j_R70cCSx87iCNc5g49S9kCjVn1ZnTS7cZt_Adv5h_rerLa5v3DnNtmG3GvDD8KnEsUol-E_ucbJQubdILirsZg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/location/:locationId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"location",
+								":locationId"
+							],
+							"variable": [
+								{
+									"key": "locationId",
+									"value": "64179a3b-9c57-4251-a284-49ef14a3630f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateLocation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MDQzMzksImlhdCI6MTY1ODQ3NTUzOSwianRpIjoiN2UxM2FjODYtYTIwYi00ODYxLWFjMDYtMzllYmViMTYzZDM0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.F9Vx45DRZXWL9vohCccfjP4vsYzCqe3vkucSO_17MrgYFPJRbRAKokEpI1xY8d_Z_dNlQYMrtsfQ4A-BpBehBny1O3u7gEFSsF_nGlzkXpIRPFPRMYFm1E2WMbAxdhta3aa4lwxrELy88nb3gWKiSc45tjLPwpKCLgBhxQI8OoMl-zm2D_6NclBs4QWpfdOgIL2XEaGIiTecMvz5SX5uh9Q-Wm4KitfNpHPkMF3OaTRBK44OcPwFVN9E-dK3Ct7j_R70cCSx87iCNc5g49S9kCjVn1ZnTS7cZt_Adv5h_rerLa5v3DnNtmG3GvDD8KnEsUol-E_ucbJQubdILirsZg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"updated name\",\n    \"tags\" : [\n        {\n            \"tagId\": \"da1c72d7-9341-44d2-8c53-14771d0bacbf\",\n            \"tagName\": \"AMERICAN_SPORT\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/location/update/:locationId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"location",
+								"update",
+								":locationId"
+							],
+							"variable": [
+								{
+									"key": "locationId",
+									"value": "64179a3b-9c57-4251-a284-49ef14a3630f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveUnsaveLocationToFavourites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg1MDQzMzksImlhdCI6MTY1ODQ3NTUzOSwianRpIjoiN2UxM2FjODYtYTIwYi00ODYxLWFjMDYtMzllYmViMTYzZDM0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJiYWE3NTJlOC02OTRiLTRlOGUtYjJiNy04ZThjY2Q1M2U1Y2MiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.F9Vx45DRZXWL9vohCccfjP4vsYzCqe3vkucSO_17MrgYFPJRbRAKokEpI1xY8d_Z_dNlQYMrtsfQ4A-BpBehBny1O3u7gEFSsF_nGlzkXpIRPFPRMYFm1E2WMbAxdhta3aa4lwxrELy88nb3gWKiSc45tjLPwpKCLgBhxQI8OoMl-zm2D_6NclBs4QWpfdOgIL2XEaGIiTecMvz5SX5uh9Q-Wm4KitfNpHPkMF3OaTRBK44OcPwFVN9E-dK3Ct7j_R70cCSx87iCNc5g49S9kCjVn1ZnTS7cZt_Adv5h_rerLa5v3DnNtmG3GvDD8KnEsUol-E_ucbJQubdILirsZg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/location/saveUnsave/favorites/:locationId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"location",
+								"saveUnsave",
+								"favorites",
+								":locationId"
+							],
+							"variable": [
+								{
+									"key": "locationId",
+									"value": "64179a3b-9c57-4251-a284-49ef14a3630f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FilterLocation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJDUmF2dmNXTUVCeDR5dmc2U1BMenJhR3NMU1NBbldiNEx6X2psN0NDNW9BIn0.eyJleHAiOjE2NjA4MzU4NzcsImlhdCI6MTY2MDgwNzA3NywianRpIjoiNjhhZjBmMzgtODVmYi00NGI1LThkMGItZmVkZjRiYzcyNGI5IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI0NTNmNjE1Mi1jNWVkLTQ4NTYtYWU4NC01NDRkNDRhNmZmN2IiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIwZjQ1ZGIwZC1jZDFkLTRmMzEtODU2Mi1jZDBkODAzYzg3YWIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIwZjQ1ZGIwZC1jZDFkLTRmMzEtODU2Mi1jZDBkODAzYzg3YWIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmUxIFRlc3RTdXJuYW1lIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTJAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTEiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlMkBtYWlsaW5hdG9yLmNvbSJ9.KhI9g1FpHodLiOct16vKJJWng1zKln8IRhgVdKhFvy6UP4fLZFB6QagH7Q4oR_i2k-u_dTQTda3OO_n9ATJ2VWwt-dp0-71AIuZNSp9Zppt66B-w3onRfa3kzCN2Gwe4YiZqmYpElFkE0uWLzU7unYebqNZtD2QY3UBJ_yOG7QmfTosq3QsgR6IU2cRc4uaxKCFfJyM4bX7HpjvIuu0LPBe4kQFpvi4cXZaKHnrrJ044BRrvCoMkLrJTJ8HpV6assh4V09ch16U5KJPPS9SzWYWlt5QMPpyn9auv18pIA-_SnkLCzNzM7HpcFA-6yb9KqBKDWuBPQa_j-FFyxdO5NA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{         \n    \"locationTags\" : [\"AMERICAN_SPORT\"]\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/location/filter?page=0&size=1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"location",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLocationsNearBy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJDUmF2dmNXTUVCeDR5dmc2U1BMenJhR3NMU1NBbldiNEx6X2psN0NDNW9BIn0.eyJleHAiOjE2NjEwMTYxOTUsImlhdCI6MTY2MDk4NzM5NSwianRpIjoiZmE4YWE1NzAtNDRkNS00MzJhLThlMjAtNmFhMTc2ZGQxM2I0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI0NTNmNjE1Mi1jNWVkLTQ4NTYtYWU4NC01NDRkNDRhNmZmN2IiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI2ODhhZWU1NS1iMTFkLTQ1NTAtYjllMi03N2JmZjU3OGIxNGQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiI2ODhhZWU1NS1iMTFkLTQ1NTAtYjllMi03N2JmZjU3OGIxNGQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmUxIFRlc3RTdXJuYW1lIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTJAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTEiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlMkBtYWlsaW5hdG9yLmNvbSJ9.mNn5ys72P2PsCvJIDmyz3oi0hWsy1ShB6gaHSKFy8gitqdJTaEc6epJIs-kWd0GErztoZLV_tjvaT6uOpc5wCdw3ROBuYUXMeSfRi7g3ELMPFXp-bWbPTqhw6_qBDlby4mj6pNquVv4a0iDUO4lV6O5aso5oGVYwWHvy2COZCfh4sh20kaf2UjjlAFn7sbqfhbQRIvg21ul0zEI1Tly3ahibm9zNpVKKDQx5yqXRmZHbsBvzlewv1Mm_jlUNzOlNg3L4CfkhDr6QNir65ARoLGJNip1NnTkK4yS5FZ9yEUgmcySucBKIoDdj_DtaAVn0MWEOcRLLOGDtt_nUUkxvvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"longitude\": 43.514623,\n    \"latitude\": 16.450710,\n    \"radius\": 200,\n    \"tags\" : [\"LEGAL_HELP\"]\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/location/get/locations/nearby",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"location",
+								"get",
+								"locations",
+								"nearby"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vibe",
+			"item": [
+				{
+					"name": "SaveVibe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NjAyMDIwMzUsImlhdCI6MTY2MDE3MzIzNSwianRpIjoiNTA3MDQ0ZjktMmQwMC00YTUzLTlkMjMtOTMzM2U4MmYxNDg0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJlODFhYmZiYS05OGFkLTQ5ZjYtODhjZC0wODQ4NGNhYzExOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIwNDA3OTZlZi05ZTVmLTRlMTUtOGM3ZS00OTA2Yzc3ZWNhNTkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIwNDA3OTZlZi05ZTVmLTRlMTUtOGM3ZS00OTA2Yzc3ZWNhNTkiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmU4IFRlc3RTdXJuYW1lIiwiZ3JvdXBzIjpbXSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTlAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTgiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlOUBtYWlsaW5hdG9yLmNvbSJ9.OVe1FF5-qTlyOHGjvrkWjRSNHuOJGHHTJB2SygHZLOVFD6ClAL8vmC8fEu7CqJqq-qS0y2gM3uv8pwNayMRkw6ivpbg4B7OuBt-nt2GP9uWNI0GbMQTwkIRt5WMsgnRTShWjakJ3CZFSeFbuD-VAQym4wwErAXprXH_wpZqIO9MWtNuAViyjxf0myluHiOtdMt41OI0GMCOOtGusridHAW-qDCAXWlwTiphVJNLHs-IjHWdDZF-eL5-_BQfz1PpEHXUVjvkO70YagpmMqMjXPF3o3Hl7U5e17I_n2r2jysVH4GidahCOd9KtyBuSpOVId8sjWjVTN8EArT5JRUn9wA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"vibename\",\n    \"startDate\": \"startDate\",\n    \"endDate\": \"endDate\",\n    \"startTime\": \"time\",\n    \"endTime\": \"endTime\",\n    \"isPrivate\": true,\n    \"isPaid\": true,\n    \"addToCalendar\": false,\n    \"friendsId\": [\n    \"eedd3fa1-e6b8-4d1b-94b5-26ee26f790ef\" \n    ],\n    \"locationGeoLocation\" : {\n        \"latitude\":\"59.356604\",\n        \"longitude\": \"18.025114\"\n    },\n    \"tags\": [\n        {\n        \"tagId\": \"94b35086-c46f-4a64-b29d-80430b98140d\",\n        \"tagName\": \"AUU_EVENTS\"\n        },\n        {\n            \"tagId\": \"7e916820-df92-4cfc-9f2c-feada3a81cd2\",\n            \"tagName\": \"ADVOCACY\"\n        }\n    ],\n    \"vibeDescription\": \"vibeDescription\"\n    \n}\n\n\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/save",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVibeById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NzQxNTIsImlhdCI6MTY1ODQ0NTM1MiwianRpIjoiMzczOWU5MWQtY2Y3YS00NmJiLWFiNGUtZWU3OWNjOTc0YThhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.edyeOu_y7aTf1cIz5Ac_drfVUVoxmrq9URdFj_PNSRrEA1flWkOEYNB6XCJLB-Jxcj1joOAKjrZciNQozae_jSaxk40M6CMr413toMsCnadYr9rH7OAkGuDwvFtoZxpx8BJoxsw8GOgd0icSPkZr07hKopi99LlOY3Lt0ay5S8chH17MI2k8bXOufVXR8jVBPcom7cWa1U3nkB6uHB10-LM3pz-FwcrDk0tDUfjnoC_Mdny_DG4nbolWbGM-3awi9LaA6UlDzgE1yTdyhmxp8GfuNJXoNozLUTx8tRP2VOozu3AkUVEKzhiHic2uKLpteuBeBhGJz_R7T6GxzD-9PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/:vibeId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								":vibeId"
+							],
+							"variable": [
+								{
+									"key": "vibeId",
+									"value": "d280c6aa-98c2-4902-b803-0b43d90c0190"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddVibeToFavourites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NjAyMDIwMzUsImlhdCI6MTY2MDE3MzIzNSwianRpIjoiNTA3MDQ0ZjktMmQwMC00YTUzLTlkMjMtOTMzM2U4MmYxNDg0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJlODFhYmZiYS05OGFkLTQ5ZjYtODhjZC0wODQ4NGNhYzExOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIwNDA3OTZlZi05ZTVmLTRlMTUtOGM3ZS00OTA2Yzc3ZWNhNTkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIwNDA3OTZlZi05ZTVmLTRlMTUtOGM3ZS00OTA2Yzc3ZWNhNTkiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmU4IFRlc3RTdXJuYW1lIiwiZ3JvdXBzIjpbXSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTlAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTgiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlOUBtYWlsaW5hdG9yLmNvbSJ9.OVe1FF5-qTlyOHGjvrkWjRSNHuOJGHHTJB2SygHZLOVFD6ClAL8vmC8fEu7CqJqq-qS0y2gM3uv8pwNayMRkw6ivpbg4B7OuBt-nt2GP9uWNI0GbMQTwkIRt5WMsgnRTShWjakJ3CZFSeFbuD-VAQym4wwErAXprXH_wpZqIO9MWtNuAViyjxf0myluHiOtdMt41OI0GMCOOtGusridHAW-qDCAXWlwTiphVJNLHs-IjHWdDZF-eL5-_BQfz1PpEHXUVjvkO70YagpmMqMjXPF3o3Hl7U5e17I_n2r2jysVH4GidahCOd9KtyBuSpOVId8sjWjVTN8EArT5JRUn9wA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/saveUnsave/favorites/:vibeId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"saveUnsave",
+								"favorites",
+								":vibeId"
+							],
+							"variable": [
+								{
+									"key": "vibeId",
+									"value": "d6839dd3-59c5-458e-84f8-fc5dea0726e8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetInvitedFriends",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NzQxNTIsImlhdCI6MTY1ODQ0NTM1MiwianRpIjoiMzczOWU5MWQtY2Y3YS00NmJiLWFiNGUtZWU3OWNjOTc0YThhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.edyeOu_y7aTf1cIz5Ac_drfVUVoxmrq9URdFj_PNSRrEA1flWkOEYNB6XCJLB-Jxcj1joOAKjrZciNQozae_jSaxk40M6CMr413toMsCnadYr9rH7OAkGuDwvFtoZxpx8BJoxsw8GOgd0icSPkZr07hKopi99LlOY3Lt0ay5S8chH17MI2k8bXOufVXR8jVBPcom7cWa1U3nkB6uHB10-LM3pz-FwcrDk0tDUfjnoC_Mdny_DG4nbolWbGM-3awi9LaA6UlDzgE1yTdyhmxp8GfuNJXoNozLUTx8tRP2VOozu3AkUVEKzhiHic2uKLpteuBeBhGJz_R7T6GxzD-9PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/list/friends/:vibeId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"list",
+								"friends",
+								":vibeId"
+							],
+							"variable": [
+								{
+									"key": "vibeId",
+									"value": "d280c6aa-98c2-4902-b803-0b43d90c0190"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditVibe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NjAyMDIwMzUsImlhdCI6MTY2MDE3MzIzNSwianRpIjoiNTA3MDQ0ZjktMmQwMC00YTUzLTlkMjMtOTMzM2U4MmYxNDg0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJlODFhYmZiYS05OGFkLTQ5ZjYtODhjZC0wODQ4NGNhYzExOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIwNDA3OTZlZi05ZTVmLTRlMTUtOGM3ZS00OTA2Yzc3ZWNhNTkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIwNDA3OTZlZi05ZTVmLTRlMTUtOGM3ZS00OTA2Yzc3ZWNhNTkiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmU4IFRlc3RTdXJuYW1lIiwiZ3JvdXBzIjpbXSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTlAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTgiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlOUBtYWlsaW5hdG9yLmNvbSJ9.OVe1FF5-qTlyOHGjvrkWjRSNHuOJGHHTJB2SygHZLOVFD6ClAL8vmC8fEu7CqJqq-qS0y2gM3uv8pwNayMRkw6ivpbg4B7OuBt-nt2GP9uWNI0GbMQTwkIRt5WMsgnRTShWjakJ3CZFSeFbuD-VAQym4wwErAXprXH_wpZqIO9MWtNuAViyjxf0myluHiOtdMt41OI0GMCOOtGusridHAW-qDCAXWlwTiphVJNLHs-IjHWdDZF-eL5-_BQfz1PpEHXUVjvkO70YagpmMqMjXPF3o3Hl7U5e17I_n2r2jysVH4GidahCOd9KtyBuSpOVId8sjWjVTN8EArT5JRUn9wA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"vibename updated\",\n    \"startDate\": \"startDate\",\n    \"endDate\": \"endDate\",\n    \"startTime\": \"time\",\n    \"endTime\": \"endTime\",\n    \"isPrivate\": false,\n    \"isPaid\": true,\n    \"addToCalendar\": false,\n    \"friendsId\": [\n    \"615fba05-d970-4a86-8d72-e1df466b1687\" \n    ],\n    \"locationGeoLocation\" : {\n        \"latitude\":\"59.356604\",\n        \"longitude\": \"18.025114\"\n    },\n    \"tags\": [\n        {\n        \"tagId\": \"6ce12e13-4997-4e11-89f0-3f73589f5cb8\",\n        \"tagName\": \"BUSINESS\"\n        },\n        {\n            \"tagId\": \"7e916820-df92-4cfc-9f2c-feada3a81cd2\",\n            \"tagName\": \"ADVOCACY\"\n        }\n        ,\n        {\n            \"tagId\": \"b88606ac-1c5a-4f6f-9538-fe571babafb6\",\n            \"tagName\": \"CAFE_CHILL_TIME\"\n        }\n    ],\n    \"vibeDescription\": \"vibeDescription updated\"\n    \n}\n\n\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/edit/:vibeId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"edit",
+								":vibeId"
+							],
+							"variable": [
+								{
+									"key": "vibeId",
+									"value": "165abf8a-7441-401e-89d5-ba1277b0da76"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCoverImageVibe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTI2NDE5MTgsImlhdCI6MTY1MjYxMzExOCwianRpIjoiMGM2YTg0NTctYzkwZC00NTI3LTk2MzItYzdjZmExNWQ5NzcxIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2MTVmYmEwNS1kOTcwLTRhODYtOGQ3Mi1lMWRmNDY2YjE2ODciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJjZDUzNGZlNS1lYmRmLTQyYmYtODBlZi03Njg5MDMzNTM4YTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJjZDUzNGZlNS1lYmRmLTQyYmYtODBlZi03Njg5MDMzNTM4YTUiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3RCRSB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJiZTFAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoidGVzdEJFIiwiZmFtaWx5X25hbWUiOiJ1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcmJlMUBtYWlsaW5hdG9yLmNvbSJ9.XpXRf8WfhoRD2RfAdhMniY7jec1NnyuFxeDr7KDs8JJp2HNyMWWuA5xIVlOHaZy1QsUrbw3gT1msGMOr5QaVa9GVfnZGZaJWCvH1hak6G2HY_o_RiCkuRFfgPcWsLC7Ht0BDcdyGsMA_-3zp02IecBYJfKksC_wPLsWZe5TL9yFE14714MXt-PsAhMr4BDQaYBPzsKq8wMXw_68B7F1hGACV5X_dpDk3bRgGqfmoFrS2KWwUbDJ78nG0FLDo2QqgxtH0dwGqZYekdDvbMr8-J8OUgPOLPNvCryVjXiufzvngLv_lVdNoy_ybFs7ir97DNxPl57p7FAmO72j1yBEa-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "multipartFile",
+									"type": "file",
+									"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/add/image/:vibeId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"add",
+								"image",
+								":vibeId"
+							],
+							"variable": [
+								{
+									"key": "vibeId",
+									"value": "d280c6aa-98c2-4902-b803-0b43d90c0190"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCoverImageVibe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTI2NDE5MTgsImlhdCI6MTY1MjYxMzExOCwianRpIjoiMGM2YTg0NTctYzkwZC00NTI3LTk2MzItYzdjZmExNWQ5NzcxIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2MTVmYmEwNS1kOTcwLTRhODYtOGQ3Mi1lMWRmNDY2YjE2ODciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJjZDUzNGZlNS1lYmRmLTQyYmYtODBlZi03Njg5MDMzNTM4YTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJjZDUzNGZlNS1lYmRmLTQyYmYtODBlZi03Njg5MDMzNTM4YTUiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3RCRSB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJiZTFAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoidGVzdEJFIiwiZmFtaWx5X25hbWUiOiJ1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcmJlMUBtYWlsaW5hdG9yLmNvbSJ9.XpXRf8WfhoRD2RfAdhMniY7jec1NnyuFxeDr7KDs8JJp2HNyMWWuA5xIVlOHaZy1QsUrbw3gT1msGMOr5QaVa9GVfnZGZaJWCvH1hak6G2HY_o_RiCkuRFfgPcWsLC7Ht0BDcdyGsMA_-3zp02IecBYJfKksC_wPLsWZe5TL9yFE14714MXt-PsAhMr4BDQaYBPzsKq8wMXw_68B7F1hGACV5X_dpDk3bRgGqfmoFrS2KWwUbDJ78nG0FLDo2QqgxtH0dwGqZYekdDvbMr8-J8OUgPOLPNvCryVjXiufzvngLv_lVdNoy_ybFs7ir97DNxPl57p7FAmO72j1yBEa-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "multipartFile",
+									"type": "file",
+									"src": "/Users/teamilardovic/Desktop/Screenshot 2022-05-08 at 17.58.16.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/:vibeId/imageId/:imageId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								":vibeId",
+								"imageId",
+								":imageId"
+							],
+							"variable": [
+								{
+									"key": "vibeId",
+									"value": "bee5f49f-48d6-47df-a4d8-1f6df2785591"
+								},
+								{
+									"key": "imageId",
+									"value": "62814622b076b11bba6a1e3d"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVibesInRadius",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXRnhwSXdLUHV2QnA3RU5tVFBCV0FqczNPVzhvSDFnTVRoQkFEREhOUmRBIn0.eyJleHAiOjE2NDY3Nzc3OTcsImlhdCI6MTY0Njc0ODk5NywianRpIjoiNjQ2ZGQyYjctNmFhYy00MTJmLWEzYmEtYjZmNDBiYTJmMThiIiwiaXNzIjoiaHR0cHM6Ly9hcGkud2V2b2x2Lm5ldDo4NDQzL2F1dGgvcmVhbG1zL3dldm9sdiIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkOTVmYzUyMS03ODc1LTRjOGYtODUwZi0zOTZhMDJmNjJkNDQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ3ZXZvbHYiLCJzZXNzaW9uX3N0YXRlIjoiMGJhMmU2YjQtYWE0MC00ODE2LWFjZmEtODc3MWQwNGQ3NGFmIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtd2V2b2x2IiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiIwYmEyZTZiNC1hYTQwLTQ4MTYtYWNmYS04NzcxZDA0ZDc0YWYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlYSBNaWxhcmRvdmljIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYnV6b3YudGVhQGdtYWlsLmNvbSIsImdpdmVuX25hbWUiOiJUZWEiLCJmYW1pbHlfbmFtZSI6Ik1pbGFyZG92aWMiLCJlbWFpbCI6ImJ1em92LnRlYUBnbWFpbC5jb20ifQ.ljAYiG9r4KqC6B7XBYvLD2gLr7msub8JCpIx53bp9q_MyILRJ7POaekcHrNthtPIcROtz0Vwhn7nkmjH_KQEco9vNx78hLOxEIchSCtpGPWh_MH82rdd0WqN-W4KIhlLfVfKAgA0oHfYdmQKyEq_Oh3tOYdeYQ_LDxBrIu0nMDv2XFi54N3m9DLM4JUNcSRjbAd_-HVYiDWfTrGiemhX3c_0FvQxPgv3DwUbeM7cfVS_RwHmz_kElOytsj6r7NVSQpmbO-aEU3Cu8tKPVtMcUL-Lli0PX5tbxt8oIcNI6wjIUHuDwKGdrSVzzYyzgTdQN_Or6KogwWhQgQksz2RH0w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"longitude\": 18.121094,\n    \"latitude\": 59.445454,\n    \"radius\": 100\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/get/vibes/nearby",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"get",
+								"vibes",
+								"nearby"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllVibes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NjAyMDIwMzUsImlhdCI6MTY2MDE3MzIzNSwianRpIjoiNTA3MDQ0ZjktMmQwMC00YTUzLTlkMjMtOTMzM2U4MmYxNDg0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJlODFhYmZiYS05OGFkLTQ5ZjYtODhjZC0wODQ4NGNhYzExOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIwNDA3OTZlZi05ZTVmLTRlMTUtOGM3ZS00OTA2Yzc3ZWNhNTkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIwNDA3OTZlZi05ZTVmLTRlMTUtOGM3ZS00OTA2Yzc3ZWNhNTkiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmU4IFRlc3RTdXJuYW1lIiwiZ3JvdXBzIjpbXSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTlAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTgiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlOUBtYWlsaW5hdG9yLmNvbSJ9.OVe1FF5-qTlyOHGjvrkWjRSNHuOJGHHTJB2SygHZLOVFD6ClAL8vmC8fEu7CqJqq-qS0y2gM3uv8pwNayMRkw6ivpbg4B7OuBt-nt2GP9uWNI0GbMQTwkIRt5WMsgnRTShWjakJ3CZFSeFbuD-VAQym4wwErAXprXH_wpZqIO9MWtNuAViyjxf0myluHiOtdMt41OI0GMCOOtGusridHAW-qDCAXWlwTiphVJNLHs-IjHWdDZF-eL5-_BQfz1PpEHXUVjvkO70YagpmMqMjXPF3o3Hl7U5e17I_n2r2jysVH4GidahCOd9KtyBuSpOVId8sjWjVTN8EArT5JRUn9wA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/get/all?vibeSelector=FAVOURITES",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"get",
+								"all"
+							],
+							"query": [
+								{
+									"key": "vibeSelector",
+									"value": "FAVOURITES"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteVibe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NzQxNTIsImlhdCI6MTY1ODQ0NTM1MiwianRpIjoiMzczOWU5MWQtY2Y3YS00NmJiLWFiNGUtZWU3OWNjOTc0YThhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.edyeOu_y7aTf1cIz5Ac_drfVUVoxmrq9URdFj_PNSRrEA1flWkOEYNB6XCJLB-Jxcj1joOAKjrZciNQozae_jSaxk40M6CMr413toMsCnadYr9rH7OAkGuDwvFtoZxpx8BJoxsw8GOgd0icSPkZr07hKopi99LlOY3Lt0ay5S8chH17MI2k8bXOufVXR8jVBPcom7cWa1U3nkB6uHB10-LM3pz-FwcrDk0tDUfjnoC_Mdny_DG4nbolWbGM-3awi9LaA6UlDzgE1yTdyhmxp8GfuNJXoNozLUTx8tRP2VOozu3AkUVEKzhiHic2uKLpteuBeBhGJz_R7T6GxzD-9PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "multipartFile",
+									"type": "file",
+									"src": "/Users/teamilardovic/Desktop/Screenshot 2022-05-08 at 17.58.16.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/delete/:vibeId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"delete",
+								":vibeId"
+							],
+							"variable": [
+								{
+									"key": "vibeId",
+									"value": "d280c6aa-98c2-4902-b803-0b43d90c0190"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FilterVibe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJDUmF2dmNXTUVCeDR5dmc2U1BMenJhR3NMU1NBbldiNEx6X2psN0NDNW9BIn0.eyJleHAiOjE2NjA4MzU4NzcsImlhdCI6MTY2MDgwNzA3NywianRpIjoiNjhhZjBmMzgtODVmYi00NGI1LThkMGItZmVkZjRiYzcyNGI5IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI0NTNmNjE1Mi1jNWVkLTQ4NTYtYWU4NC01NDRkNDRhNmZmN2IiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIwZjQ1ZGIwZC1jZDFkLTRmMzEtODU2Mi1jZDBkODAzYzg3YWIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIwZjQ1ZGIwZC1jZDFkLTRmMzEtODU2Mi1jZDBkODAzYzg3YWIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmUxIFRlc3RTdXJuYW1lIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTJAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTEiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlMkBtYWlsaW5hdG9yLmNvbSJ9.KhI9g1FpHodLiOct16vKJJWng1zKln8IRhgVdKhFvy6UP4fLZFB6QagH7Q4oR_i2k-u_dTQTda3OO_n9ATJ2VWwt-dp0-71AIuZNSp9Zppt66B-w3onRfa3kzCN2Gwe4YiZqmYpElFkE0uWLzU7unYebqNZtD2QY3UBJ_yOG7QmfTosq3QsgR6IU2cRc4uaxKCFfJyM4bX7HpjvIuu0LPBe4kQFpvi4cXZaKHnrrJ044BRrvCoMkLrJTJ8HpV6assh4V09ch16U5KJPPS9SzWYWlt5QMPpyn9auv18pIA-_SnkLCzNzM7HpcFA-6yb9KqBKDWuBPQa_j-FFyxdO5NA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{         \n    \"vibeTags\" : [\"AUU_EVENTS\"]\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/filter?page=0&size=1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVibesNearBy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJDUmF2dmNXTUVCeDR5dmc2U1BMenJhR3NMU1NBbldiNEx6X2psN0NDNW9BIn0.eyJleHAiOjE2NjEwMTYxOTUsImlhdCI6MTY2MDk4NzM5NSwianRpIjoiZmE4YWE1NzAtNDRkNS00MzJhLThlMjAtNmFhMTc2ZGQxM2I0IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI0NTNmNjE1Mi1jNWVkLTQ4NTYtYWU4NC01NDRkNDRhNmZmN2IiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI2ODhhZWU1NS1iMTFkLTQ1NTAtYjllMi03N2JmZjU3OGIxNGQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiI2ODhhZWU1NS1iMTFkLTQ1NTAtYjllMi03N2JmZjU3OGIxNGQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmUxIFRlc3RTdXJuYW1lIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTJAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTEiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlMkBtYWlsaW5hdG9yLmNvbSJ9.mNn5ys72P2PsCvJIDmyz3oi0hWsy1ShB6gaHSKFy8gitqdJTaEc6epJIs-kWd0GErztoZLV_tjvaT6uOpc5wCdw3ROBuYUXMeSfRi7g3ELMPFXp-bWbPTqhw6_qBDlby4mj6pNquVv4a0iDUO4lV6O5aso5oGVYwWHvy2COZCfh4sh20kaf2UjjlAFn7sbqfhbQRIvg21ul0zEI1Tly3ahibm9zNpVKKDQx5yqXRmZHbsBvzlewv1Mm_jlUNzOlNg3L4CfkhDr6QNir65ARoLGJNip1NnTkK4yS5FZ9yEUgmcySucBKIoDdj_DtaAVn0MWEOcRLLOGDtt_nUUkxvvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"longitude\": 43.514623,\n    \"latitude\": 16.450710,\n    \"radius\": 200,\n    \"tags\" : [\"LEGAL_HELP\"]\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/vibe/get/vibes/nearby",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"vibe",
+								"get",
+								"vibes",
+								"nearby"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deck",
+			"item": [
+				{
+					"name": "SaveDeck",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg3OTIyNjcsImlhdCI6MTY1ODc2MzQ2NywianRpIjoiYzM5Yzc2YzQtNDQ3NS00ODRkLTllYzAtMmM3ZjY5NTU5NzhkIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJlODFhYmZiYS05OGFkLTQ5ZjYtODhjZC0wODQ4NGNhYzExOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJlMjg4ODgwYy0wMTM2LTQ0MTYtOWMxYy03MjUzM2E4YWRmNTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJlMjg4ODgwYy0wMTM2LTQ0MTYtOWMxYy03MjUzM2E4YWRmNTciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmU4IFRlc3RTdXJuYW1lIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTlAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTgiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlOUBtYWlsaW5hdG9yLmNvbSJ9.R2RPP_6L7j9LWVkQ4jGG3rsSL31T2gc9ndG3_OpFpsnoxgpelmddmLi46nC2NuNmgZuMWFOYPFVS8l2FigTSvh94tMTIDEeNVmskzrW4gl7k1DiEJQO1t6IzKsf6PuoQrT8v8jnshOJgat8cRhL_uBaPZ0XKN2Yu4OvN4IncySwevWb-__AYd_kft6XRW3SFHQSDxvJYq76v3cvC9YO9ubIrvpQ2zQOfuXd2b1TMV7nUqvg9vQU-IrtEUhrdFcQRagZmeutzBsECHYNgLpdnDx27eegM-Ijq3P3fHD0CRUMngbP2Qxl3oYWdvLS7cZCavO-OKPGM9B8N0Mxz1hJPig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Split update\",\n    \"description\":\"name update\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/deck/create",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateDeck",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTI2NTIzNjIsImlhdCI6MTY1MjYyMzU2MiwianRpIjoiMWVlZmUzNjctMjE3ZS00N2RjLWI1ZTYtNDkxMDJkYTMwN2MzIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2MTVmYmEwNS1kOTcwLTRhODYtOGQ3Mi1lMWRmNDY2YjE2ODciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI1MmEzNzkyZS00MzllLTRhM2MtODNhYS0zMzcxY2JiYWM5Y2YiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiI1MmEzNzkyZS00MzllLTRhM2MtODNhYS0zMzcxY2JiYWM5Y2YiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3RCRSB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJiZTFAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoidGVzdEJFIiwiZmFtaWx5X25hbWUiOiJ1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcmJlMUBtYWlsaW5hdG9yLmNvbSJ9.ofKJqHv66BsA57f11e27huV8M7V_Gvlfasa9MCOWzhfVcakE2O2g7xdK4cVjS8KrqgeLiva1sQ3wSBicKf0evm84tJJ4kPSmoST45yE_3sTN1g5F1kLdZMU10xrqSZEGCittx8fAzgk-WylfMn1Dbjsaj8GJE4DnsFtQIGtwlk8-ns1_Orsv_cJ9745rMWU6IEpVZdmlfRPOtUCiA6pIW_UsZw7X4OBdWYdNzAV0SLvxFfjbQTCyy4UxNCKDvFVLk2Ez3FTjBrS0MdDUm-JBfPV-fRD_WKoFTt7BQLi-gdPgG5av7Gdu7s3WSuKTYRjMKLPUX74WUxz7aseck4uUEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Name updated\",\n    \"description\":\"description updated\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/deck/update/:deckId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								"update",
+								":deckId"
+							],
+							"variable": [
+								{
+									"key": "deckId",
+									"value": "4f19b807-d1ac-4322-95c6-f66c5d232b78"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllDecks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg3OTIyNjcsImlhdCI6MTY1ODc2MzQ2NywianRpIjoiYzM5Yzc2YzQtNDQ3NS00ODRkLTllYzAtMmM3ZjY5NTU5NzhkIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJlODFhYmZiYS05OGFkLTQ5ZjYtODhjZC0wODQ4NGNhYzExOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJlMjg4ODgwYy0wMTM2LTQ0MTYtOWMxYy03MjUzM2E4YWRmNTciLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJlMjg4ODgwYy0wMTM2LTQ0MTYtOWMxYy03MjUzM2E4YWRmNTciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmU4IFRlc3RTdXJuYW1lIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTlAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTgiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlOUBtYWlsaW5hdG9yLmNvbSJ9.R2RPP_6L7j9LWVkQ4jGG3rsSL31T2gc9ndG3_OpFpsnoxgpelmddmLi46nC2NuNmgZuMWFOYPFVS8l2FigTSvh94tMTIDEeNVmskzrW4gl7k1DiEJQO1t6IzKsf6PuoQrT8v8jnshOJgat8cRhL_uBaPZ0XKN2Yu4OvN4IncySwevWb-__AYd_kft6XRW3SFHQSDxvJYq76v3cvC9YO9ubIrvpQ2zQOfuXd2b1TMV7nUqvg9vQU-IrtEUhrdFcQRagZmeutzBsECHYNgLpdnDx27eegM-Ijq3P3fHD0CRUMngbP2Qxl3oYWdvLS7cZCavO-OKPGM9B8N0Mxz1hJPig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/deck/get/all",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								"get",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetDeckById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTI2NTIzNjIsImlhdCI6MTY1MjYyMzU2MiwianRpIjoiMWVlZmUzNjctMjE3ZS00N2RjLWI1ZTYtNDkxMDJkYTMwN2MzIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2MTVmYmEwNS1kOTcwLTRhODYtOGQ3Mi1lMWRmNDY2YjE2ODciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiI1MmEzNzkyZS00MzllLTRhM2MtODNhYS0zMzcxY2JiYWM5Y2YiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiI1MmEzNzkyZS00MzllLTRhM2MtODNhYS0zMzcxY2JiYWM5Y2YiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3RCRSB1c2VyIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJiZTFAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoidGVzdEJFIiwiZmFtaWx5X25hbWUiOiJ1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcmJlMUBtYWlsaW5hdG9yLmNvbSJ9.ofKJqHv66BsA57f11e27huV8M7V_Gvlfasa9MCOWzhfVcakE2O2g7xdK4cVjS8KrqgeLiva1sQ3wSBicKf0evm84tJJ4kPSmoST45yE_3sTN1g5F1kLdZMU10xrqSZEGCittx8fAzgk-WylfMn1Dbjsaj8GJE4DnsFtQIGtwlk8-ns1_Orsv_cJ9745rMWU6IEpVZdmlfRPOtUCiA6pIW_UsZw7X4OBdWYdNzAV0SLvxFfjbQTCyy4UxNCKDvFVLk2Ez3FTjBrS0MdDUm-JBfPV-fRD_WKoFTt7BQLi-gdPgG5av7Gdu7s3WSuKTYRjMKLPUX74WUxz7aseck4uUEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/deck/get/:deckId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								"get",
+								":deckId"
+							],
+							"variable": [
+								{
+									"key": "deckId",
+									"value": "4f3251b8-0d19-4d3e-99bb-5947c1a1aa2e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCoverImage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NzQxNTIsImlhdCI6MTY1ODQ0NTM1MiwianRpIjoiMzczOWU5MWQtY2Y3YS00NmJiLWFiNGUtZWU3OWNjOTc0YThhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.edyeOu_y7aTf1cIz5Ac_drfVUVoxmrq9URdFj_PNSRrEA1flWkOEYNB6XCJLB-Jxcj1joOAKjrZciNQozae_jSaxk40M6CMr413toMsCnadYr9rH7OAkGuDwvFtoZxpx8BJoxsw8GOgd0icSPkZr07hKopi99LlOY3Lt0ay5S8chH17MI2k8bXOufVXR8jVBPcom7cWa1U3nkB6uHB10-LM3pz-FwcrDk0tDUfjnoC_Mdny_DG4nbolWbGM-3awi9LaA6UlDzgE1yTdyhmxp8GfuNJXoNozLUTx8tRP2VOozu3AkUVEKzhiHic2uKLpteuBeBhGJz_R7T6GxzD-9PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "multipartFile",
+									"type": "file",
+									"src": "/Users/teamilardovic/Desktop/Screenshot 2022-07-07 at 12.37.01.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/deck/cover/image/add/:deckId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								"cover",
+								"image",
+								"add",
+								":deckId"
+							],
+							"variable": [
+								{
+									"key": "deckId",
+									"value": "4f3251b8-0d19-4d3e-99bb-5947c1a1aa2e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCoverImage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NzQxNTIsImlhdCI6MTY1ODQ0NTM1MiwianRpIjoiMzczOWU5MWQtY2Y3YS00NmJiLWFiNGUtZWU3OWNjOTc0YThhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.edyeOu_y7aTf1cIz5Ac_drfVUVoxmrq9URdFj_PNSRrEA1flWkOEYNB6XCJLB-Jxcj1joOAKjrZciNQozae_jSaxk40M6CMr413toMsCnadYr9rH7OAkGuDwvFtoZxpx8BJoxsw8GOgd0icSPkZr07hKopi99LlOY3Lt0ay5S8chH17MI2k8bXOufVXR8jVBPcom7cWa1U3nkB6uHB10-LM3pz-FwcrDk0tDUfjnoC_Mdny_DG4nbolWbGM-3awi9LaA6UlDzgE1yTdyhmxp8GfuNJXoNozLUTx8tRP2VOozu3AkUVEKzhiHic2uKLpteuBeBhGJz_R7T6GxzD-9PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "hhttps://api.wevolv.net/api/staging/wevibe/deck/:deckId/delete/cover/image/:imageId",
+							"protocol": "hhttps",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								":deckId",
+								"delete",
+								"cover",
+								"image",
+								":imageId"
+							],
+							"variable": [
+								{
+									"key": "deckId",
+									"value": "4f3251b8-0d19-4d3e-99bb-5947c1a1aa2e"
+								},
+								{
+									"key": "imageId",
+									"value": "62d9e556d263df625aa528ff"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PinDeck",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NzQxNTIsImlhdCI6MTY1ODQ0NTM1MiwianRpIjoiMzczOWU5MWQtY2Y3YS00NmJiLWFiNGUtZWU3OWNjOTc0YThhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.edyeOu_y7aTf1cIz5Ac_drfVUVoxmrq9URdFj_PNSRrEA1flWkOEYNB6XCJLB-Jxcj1joOAKjrZciNQozae_jSaxk40M6CMr413toMsCnadYr9rH7OAkGuDwvFtoZxpx8BJoxsw8GOgd0icSPkZr07hKopi99LlOY3Lt0ay5S8chH17MI2k8bXOufVXR8jVBPcom7cWa1U3nkB6uHB10-LM3pz-FwcrDk0tDUfjnoC_Mdny_DG4nbolWbGM-3awi9LaA6UlDzgE1yTdyhmxp8GfuNJXoNozLUTx8tRP2VOozu3AkUVEKzhiHic2uKLpteuBeBhGJz_R7T6GxzD-9PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/deck/pin/:deckId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								"pin",
+								":deckId"
+							],
+							"variable": [
+								{
+									"key": "deckId",
+									"value": "4f3251b8-0d19-4d3e-99bb-5947c1a1aa2e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddVibesLocationsDeck",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NzQxNTIsImlhdCI6MTY1ODQ0NTM1MiwianRpIjoiMzczOWU5MWQtY2Y3YS00NmJiLWFiNGUtZWU3OWNjOTc0YThhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.edyeOu_y7aTf1cIz5Ac_drfVUVoxmrq9URdFj_PNSRrEA1flWkOEYNB6XCJLB-Jxcj1joOAKjrZciNQozae_jSaxk40M6CMr413toMsCnadYr9rH7OAkGuDwvFtoZxpx8BJoxsw8GOgd0icSPkZr07hKopi99LlOY3Lt0ay5S8chH17MI2k8bXOufVXR8jVBPcom7cWa1U3nkB6uHB10-LM3pz-FwcrDk0tDUfjnoC_Mdny_DG4nbolWbGM-3awi9LaA6UlDzgE1yTdyhmxp8GfuNJXoNozLUTx8tRP2VOozu3AkUVEKzhiHic2uKLpteuBeBhGJz_R7T6GxzD-9PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vibeIds\" : [\n        \"c010bef2-1ce2-4d49-9235-a2db4c0b4cbf\"\n    ],\n    \"locationIds\" : [\"37f7d890-3340-4012-ba28-56568e0e6be6\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/deck/add/vibe/location/:deckId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								"add",
+								"vibe",
+								"location",
+								":deckId"
+							],
+							"variable": [
+								{
+									"key": "deckId",
+									"value": "e1d4de1f-f759-4f4b-821c-c8bb3adcfeb4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddVibesLocationsDeck Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NzQxNTIsImlhdCI6MTY1ODQ0NTM1MiwianRpIjoiMzczOWU5MWQtY2Y3YS00NmJiLWFiNGUtZWU3OWNjOTc0YThhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.edyeOu_y7aTf1cIz5Ac_drfVUVoxmrq9URdFj_PNSRrEA1flWkOEYNB6XCJLB-Jxcj1joOAKjrZciNQozae_jSaxk40M6CMr413toMsCnadYr9rH7OAkGuDwvFtoZxpx8BJoxsw8GOgd0icSPkZr07hKopi99LlOY3Lt0ay5S8chH17MI2k8bXOufVXR8jVBPcom7cWa1U3nkB6uHB10-LM3pz-FwcrDk0tDUfjnoC_Mdny_DG4nbolWbGM-3awi9LaA6UlDzgE1yTdyhmxp8GfuNJXoNozLUTx8tRP2VOozu3AkUVEKzhiHic2uKLpteuBeBhGJz_R7T6GxzD-9PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vibeIds\" : [\n        \"c010bef2-1ce2-4d49-9235-a2db4c0b4cbf\"\n    ],\n    \"locationIds\" : [\"37f7d890-3340-4012-ba28-56568e0e6be6\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/deck/add/vibe/location/:deckId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								"add",
+								"vibe",
+								"location",
+								":deckId"
+							],
+							"variable": [
+								{
+									"key": "deckId",
+									"value": "e1d4de1f-f759-4f4b-821c-c8bb3adcfeb4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteVibesLocationsDeck Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTg0NzQxNTIsImlhdCI6MTY1ODQ0NTM1MiwianRpIjoiMzczOWU5MWQtY2Y3YS00NmJiLWFiNGUtZWU3OWNjOTc0YThhIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIwOGI1NmMxZS01NDI5LTRlMDQtYjkyMy0zNjNhOTE2NmFmMzUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiIyNTE1YjcyNi0yOGVkLTQzMjMtOTEzNy0xMmRlNDgxN2NhYzgiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QgdXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIiwiZ2l2ZW5fbmFtZSI6InRlc3QiLCJmYW1pbHlfbmFtZSI6InVzZXIiLCJlbWFpbCI6InRlc3R1c2VyZmUxQG1haWxpbmF0b3IuY29tIn0.edyeOu_y7aTf1cIz5Ac_drfVUVoxmrq9URdFj_PNSRrEA1flWkOEYNB6XCJLB-Jxcj1joOAKjrZciNQozae_jSaxk40M6CMr413toMsCnadYr9rH7OAkGuDwvFtoZxpx8BJoxsw8GOgd0icSPkZr07hKopi99LlOY3Lt0ay5S8chH17MI2k8bXOufVXR8jVBPcom7cWa1U3nkB6uHB10-LM3pz-FwcrDk0tDUfjnoC_Mdny_DG4nbolWbGM-3awi9LaA6UlDzgE1yTdyhmxp8GfuNJXoNozLUTx8tRP2VOozu3AkUVEKzhiHic2uKLpteuBeBhGJz_R7T6GxzD-9PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vibeIds\" : [\n        \"c010bef2-1ce2-4d49-9235-a2db4c0b4cbf\"\n    ],\n    \"locationIds\" : [\n        \n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wevolv.net/api/staging/wevibe/deck/delete/vibe/location/:deckId",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wevolv",
+								"net"
+							],
+							"path": [
+								"api",
+								"staging",
+								"wevibe",
+								"deck",
+								"delete",
+								"vibe",
+								"location",
+								":deckId"
+							],
+							"variable": [
+								{
+									"key": "deckId",
+									"value": "e1d4de1f-f759-4f4b-821c-c8bb3adcfeb4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetCountries",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOSXkybGVYYllHY2dtclFwb0U5dFVkN2o2T2NQS2NVSlRxQjNTdnFUek5zIn0.eyJleHAiOjE2NTkzMTgyMDcsImlhdCI6MTY1OTI4OTQwNywianRpIjoiNzllNjdhYzItZTUwNi00ZWJkLTgzMjctNjg0OGE3YTY2MGMxIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLWh0dHAua2V5Y2xvYWsvYXV0aC9yZWFsbXMvc3RhZ2luZyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJlODFhYmZiYS05OGFkLTQ5ZjYtODhjZC0wODQ4NGNhYzExOTMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzdGFnaW5nLXdldm9sdiIsInNlc3Npb25fc3RhdGUiOiJjMGQzNDQxZi00M2M5LTRmNWMtOGMzNS1mMmRlOTAwNDhmYTYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1zdGFnaW5nIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJzaWQiOiJjMGQzNDQxZi00M2M5LTRmNWMtOGMzNS1mMmRlOTAwNDhmYTYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3RVc2VyRmU4IFRlc3RTdXJuYW1lIiwiZ3JvdXBzIjpbXSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdHVzZXJmZTlAbWFpbGluYXRvci5jb20iLCJnaXZlbl9uYW1lIjoiVGVzdFVzZXJGZTgiLCJmYW1pbHlfbmFtZSI6IlRlc3RTdXJuYW1lIiwiZW1haWwiOiJ0ZXN0dXNlcmZlOUBtYWlsaW5hdG9yLmNvbSJ9.b1TnNwKm8pS0HxxgF6VPt_mjYb2lBnUDGHnuyoP9mXlVztB7OCP8hfY-saRvHoSE7SVL9M9yeZY-jcgs01j44EjFwCA20YClBJO7zP9HBf8fRVX9yBmpoxBvPQywYb_brD2Dd7Q2kd8RehnT5SJ55r9ERJX0Ko1KUht4rM41SnMBNrL9wKJWEGmYZT-xa3a0uH0Vv_SLNDJWFj3kKxVX6XvRJB2jU09jibPXq6aNaS6UxdCvsqw89odhu6hodqZLCDBhWIsbQNUSahFmEMDUvlrC0iLRDn6CGmbwVi0WAJsAbYHjEd_0KILv_JiXaOMfjfNh8jysZQohP_zvASTPBg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.wevolv.net/api/staging/team-service/countries",
+					"protocol": "https",
+					"host": [
+						"api",
+						"wevolv",
+						"net"
+					],
+					"path": [
+						"api",
+						"staging",
+						"team-service",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

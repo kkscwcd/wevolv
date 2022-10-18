@@ -1,0 +1,19 @@
+server:
+  error:
+    include-message: always
+  port: 8080
+  servlet:
+    contextPath: /notification-service
+spring:
+  application:
+    name: push-notification-service
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://userAdmin:passwordAdmin@localhost:27017/notifications?authSource=admin
+mongodb:
+  database: ${MONGODB_NAME:notifications}
+
+app:
+  firebase-configuration-file: wevolv-push-notification-firebase-adminsdk-34kta-745079e21f.json
+

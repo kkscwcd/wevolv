@@ -1,0 +1,26 @@
+server:
+  error:
+    include-message: always
+  port: 8080
+  servlet:
+    contextPath: /wevibe-service
+spring:
+  application:
+    name: wevibe-service
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: ${MONGODB_URI}
+
+mongodb:
+  database: ${MONGODB_NAME:wevibe}
+
+services:
+  profile-service:
+    url: ${PROFILE_SERVICE_URL}
+
+cloudinary:
+  cloud_name: ${CLOUDINARY_NAME}
+  api_key: ${CLOUDINARY_API_KEY}
+  api_secret: ${CLOUDINARY_API_SECRET}
+

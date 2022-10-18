@@ -1,0 +1,27 @@
+server:
+  error:
+    include-message: always
+  port: 8082
+  servlet:
+    contextPath: /wevibe-service
+spring:
+  application:
+    name: wevibe-service
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://tea:teapassword@localhost:27017/team?authSource=admin
+
+mongodb:
+  database: ${MONGODB_NAME:wevibe}
+
+services:
+  profile-service:
+    url: ${PROFILE_SERVICE_URL:http://localhost:8081/profile-service}
+  calendar-service:
+    url: ${CALENDAR_SERVICE_URL:http://localhost:8082/calendar-service}
+
+cloudinary:
+  cloud_name: ${CLOUDINARY_NAME:wevolv}
+  api_key: ${CLOUDINARY_API_KEY:284143678489521}
+  api_secret: ${CLOUDINARY_API_SECRET:pNUPK0gh-yfB_NTJs1GpDugJo44}

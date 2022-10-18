@@ -1,0 +1,39 @@
+server:
+  error:
+    include-message: always
+  port: 8080
+  servlet:
+    contextPath: /payment-service
+spring:
+  application:
+    name: payment-api
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: ${MONGODB_URI}
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+mongodb:
+  database: ${MONGODB_NAME}
+
+services:
+  profile-service:
+    url: ${PROFILE_SERVICE_URL}
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+stripe:
+  public-key: ${STRIPE_PUBLIC_KEY}
+  secret-key: ${STRIPE_SECRET_KEY}
+
+cors:
+  enabled: false

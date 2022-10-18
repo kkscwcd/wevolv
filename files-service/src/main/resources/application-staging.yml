@@ -1,0 +1,21 @@
+server:
+  port : 8080
+  error:
+    include-message: always
+  servlet:
+    contextPath: /files-service
+spring:
+  application:
+    name: files-service
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: ${MONGODB_URI}
+
+mongodb:
+  database: ${MONGODB_NAME}
+
+cloudinary:
+  cloud_name: ${CLOUDINARY_NAME}
+  api_key: ${CLOUDINARY_API_KEY}
+  api_secret: ${CLOUDINARY_API_SECRET}

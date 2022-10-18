@@ -1,0 +1,30 @@
+server:
+  port : 8089
+  servlet:
+    contextPath: /union-service
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://tea:teapassword@localhost:27017/team?authSource=admin
+
+mongodb:
+  database: ${MONGODB_NAME:union}
+
+services:
+  profile-service:
+    url: ${PROFILE_SERVICE_URL:http://localhost:8082/profile-service}
+  forum-service:
+    url: ${FORUM_SERVICE_URL:http://localhost:8085/forum-service}
+  calendar-service:
+    url: ${CALENDAR_SERVICE_URL:http://localhost:8080/calendar-service}
+
+
+cloudinary:
+  cloud_name: ${CLOUDINARY_NAME:wevolv}
+  api_key: ${CLOUDINARY_API_KEY:284143678489521}
+  api_secret: ${CLOUDINARY_API_SECRET:pNUPK0gh-yfB_NTJs1GpDugJo44}

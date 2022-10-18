@@ -1,0 +1,13 @@
+package com.auth.testlogin.model.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class SearchDto {
+
+    String term;
+}

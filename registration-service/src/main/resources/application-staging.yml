@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /registration-service
+spring:
+  application:
+    name: registration-service
+
+#==================Keycloak properties================#
+keycloak:
+  realm: ${CLIENT_RELM_NAME}
+  auth-server-url: ${KEYCLOAK_URL_WITH_PATH}
+  ssl-required: external
+  #keycloak resource is the client ID
+  resource: ${KEYCLOAK_CLIENT_NAME}
+  #replace secret with your key
+  #The line below will prevent redirect to login page
+  bearer-only: true
+
+#Admin credentials, reading system env variables
+admin:
+  username: ${KEYCLOAK_ADMIN_USER}
+  password: ${KEYCLOAK_ADMIN_PASSWORD}
+services:
+  user-service:
+    url: ${USER_SERVICE_URL}
+
+  twilio-service:
+    url: ${TWILIO_SERVICE_URL}
+
+  profile-service:
+    url: ${PROFILE_SERVICE_URL}
+
+  auth_api:
+    url: ${AUTH_API_URL:https://staging-api.wevolv.net/api/latest/auth}

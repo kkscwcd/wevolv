@@ -1,0 +1,35 @@
+server:
+  port : 8080
+  error:
+    include-message: always
+  servlet:
+    contextPath: /union-service
+spring:
+  application:
+    name: union-service
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: ${MONGODB_URI}
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 4MB
+      max-request-size: 5MB
+
+mongodb:
+  database: ${MONGODB_NAME}
+
+services:
+  profile-service:
+    url: ${PROFILE_SERVICE_URL}
+
+
+
+# root folder where all uploaded file will go
+upload:
+  directory:
+    rootpath: /user/home/wevolv/
+
+cors:
+  enabled: true

@@ -1,0 +1,38 @@
+server:
+  error:
+    include-message: always
+  port: 8087
+  servlet:
+    contextPath: /payment-service
+spring:
+  application:
+    name: payment-api
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/payment-service}
+
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+mongodb:
+  database: ${MONGODB_NAME:payment-service}
+
+services:
+  profile-service:
+    url: ${PROFILE_SERVICE_URL:https://api.wevolv.net/api/staging/profile}
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+
+stripe:
+  public-key: ${STRIPE_PUBLIC_KEY:pk_test_51LHtl1HKgMZl4KygWFM1yoG3ZZhBvOpBuaPTa1PEOdqWH24KDMQFori3DqMonfvTetaOKiLLMEk7NFbKQ7hsB56200J9df4wFl}
+  secret-key: ${STRIPE_SECRET_KEY:sk_test_51LHtl1HKgMZl4KygGFRZQ9IFQheZvuIPIQIWPZEX1XzPir3LMXrLgNzVDnNin5sSObF8iTEcOlX7q9OsxuBg1Rb600E3fWqV61}

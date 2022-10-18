@@ -1,0 +1,20 @@
+server:
+  error:
+    include-message: always
+  port: 8080
+  servlet:
+    contextPath: /calendar-service
+spring:
+  application:
+    name: calendar-service
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://userAdmin:passwordAdmin@localhost:27017/calendar?authSource=admin
+
+mongodb:
+  database: ${MONGODB_NAME:calendar}
+
+services:
+  profile-service:
+    url: ${PROFILE_SERVICE_URL:http://localhost:8081/profile-service}

@@ -1,0 +1,22 @@
+
+server:
+  port : 8085
+  servlet:
+    contextPath: /files-service
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://tea:teapassword@localhost:27017/files?authSource=admin
+
+mongodb:
+  database: ${MONGODB_NAME:files}
+
+cloudinary:
+  cloud_name: ${CLOUDINARY_NAME:wevolv}
+  api_key: ${CLOUDINARY_API_KEY:284143678489521}
+  api_secret: ${CLOUDINARY_API_SECRET:pNUPK0gh-yfB_NTJs1GpDugJo44}

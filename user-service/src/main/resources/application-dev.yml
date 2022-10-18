@@ -1,0 +1,47 @@
+server:
+  error:
+    include-message: always
+  port: 8086
+  servlet:
+    contextPath: /user-service
+spring:
+  application:
+    name: user-service
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: ${MONGODB_URI:mongodb://userAdmin:passwordAdmin@localhost:27017/user?authSource=admin}
+
+mongodb:
+  database: ${MONGODB_NAME:user}
+
+#==================Keycloak properties================#
+keycloak:
+  realm: ${CLIENT_RELM_NAME:registerapirealm}
+  auth-server-url: ${KEYCLOAK_URL_WITH_PATH:http://localhost:8080/auth}
+  ssl-required: external
+  #keycloak resource is the client ID
+  resource: ${KEYCLOAK_CLIENT_NAME:registerApiClient}
+  #replace secret with your key
+  #The line below will prevent redirect to login page
+  bearer-only: true
+
+#Admin credentials, reading system env variables
+admin:
+  username: ${KEYCLOAK_ADMIN_USER:buzov.tea@gmail.com}
+  password: ${KEYCLOAK_ADMIN_PASSWORD:teatea35}
+
+invite:
+  base-url: ${REGISTRATION_SERVICE_URL:http://localhost:8080/registration-service}
+  qr-code-height: 300
+  qr-code-width: 300
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+
